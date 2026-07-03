@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "tailwind:watch": "npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/style.css --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "kodaqow",
   "license": "ISC",
-  "description": "",
+  "description": "Full-stack web application with Express backend and Vanilla JS frontend",
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1"
